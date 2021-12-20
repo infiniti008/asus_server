@@ -3,7 +3,12 @@ module.exports = {
         {
             name: 'test',
             script: __dirname + '/test/index.js',
-            autorestart: false
+            autorestart: true
+        },
+        {
+            name: 'mqtt',
+            script: __dirname + '/mqtt/index.js',
+            autorestart: true
         }
     ]
 };
