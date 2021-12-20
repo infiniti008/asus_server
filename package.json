@@ -1,0 +1,23 @@
+{
+  "name": "asus_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pm2 start ./ecosystem.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infiniti008/asus_server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/infiniti008/asus_server/issues"
+  },
+  "homepage": "https://github.com/infiniti008/asus_server#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
