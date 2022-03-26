@@ -1,7 +1,5 @@
 #!/bin/sh
 
-cd /usr/src
+cd /usr/src/asus_server
 
-rm -rf asus_server
-
-git clone https://github.com/infiniti008/asus_server.git
+git pull
