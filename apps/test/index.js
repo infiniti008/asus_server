@@ -9,4 +9,6 @@ app.listen('8070', () => {
 
 app.get('/', (req, res) => {
   res.send('sadlas;dlaks;dlaskd;laskd 8070 is prod: ' + IS_PROD);
+
+  console.log('request is prod: ' + IS_PROD);
 });
