@@ -10,4 +10,6 @@ npm ci
 
 npm install pm2 -g
 
+export $(cat .env | xargs)
+
 pm2 start ./ecosystem.config.js
