@@ -1,5 +1,11 @@
+let serviceAccountPath = './alfabot-firebase.js';
+
+if(process.env.NODE_ENV === 'prod') {
+    serviceAccountPath = '/home/node/app/alfabot-firebase.js'
+}
+
 import admin from 'firebase-admin';
-import serviceAccount from'./alfabot-firebase.js';
+import serviceAccount from './alfabot-firebase.js';
 import CONFIG from './config.js';
 
 class BaseData {
