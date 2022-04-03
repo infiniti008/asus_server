@@ -1,8 +1,8 @@
 let serviceAccountPath = './alfabot-firebase.js';
 
-console.log(process.env)
+console.log('process.env', process.env)
 
-console.log(process.env.NODE_ENV)
+console.log('process.env', process.env.NODE_ENV)
 
 if(process.env.NODE_ENV === 'prod') {
     serviceAccountPath = '/home/node/app/alfabot-firebase.js'
