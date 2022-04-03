@@ -9,7 +9,7 @@ if(process.env.NODE_ENV === 'prod') {
 }
 
 import admin from 'firebase-admin';
-import serviceAccount from serviceAccountPath;
+import serviceAccount from [serviceAccountPath];
 import CONFIG from './config.js';
 
 class BaseData {
