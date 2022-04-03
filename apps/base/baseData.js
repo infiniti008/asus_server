@@ -1,18 +1,21 @@
-let serviceAccountPath = './alfabot-firebase.js';
-
-console.log('process.env', process.env)
-
-console.log('process.env', process.env.NODE_ENV)
-
+let serviceAccountPath = 'apps/base/alfabot-firebase.json';
 if(process.env.NODE_ENV === 'prod') {
-    serviceAccountPath = '/home/node/app/alfabot-firebase.js'
+    serviceAccountPath = '/home/node/app/alfabot-firebase.json'
 }
 
 import admin from 'firebase-admin';
-const { serviceAccount } = await import(serviceAccountPath);
+import fs from 'fs';
 import CONFIG from './config.js';
 
-console.log()
+let serviceAccount = {};
+
+try {
+  console.log('serviceAccountPath', serviceAccountPath)
+  serviceAccount = fs.readFileSync(serviceAccountPath).toString();
+  serviceAccount = JSON.parse(serviceAccount);
+} catch(e) {
+  console.log(e);
+}
 
 class BaseData {
     constructor(){

@@ -1,7 +1,7 @@
 import rp from 'request-promise';
 import cheerio from 'cheerio';
 import sendKursByKey from '../api.js';
-import getDescendantProp from '../utils.js';
+import { getDescendantProp } from '../../../utils.js';
 
 function get_alfa(str) {
   const $ = cheerio.load(str);

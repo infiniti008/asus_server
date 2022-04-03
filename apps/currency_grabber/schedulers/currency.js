@@ -1,5 +1,5 @@
 import rp from 'request-promise';
-import getDescendantProp from '../utils.js';
+import { getDescendantProp } from '../../../utils.js';
 import sendKursByKey from '../api.js';
 
 function updateCurrency() {
