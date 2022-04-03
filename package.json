@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "pm2 start ./ecosystem.config.js"
@@ -18,6 +19,10 @@
   },
   "homepage": "https://github.com/infiniti008/asus_server#readme",
   "dependencies": {
-    "express": "^4.17.2"
+    "cheerio": "^1.0.0-rc.10",
+    "express": "^4.17.2",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "firebase-admin": "^9.4.2"
   }
 }
