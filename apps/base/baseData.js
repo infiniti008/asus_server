@@ -9,8 +9,10 @@ if(process.env.NODE_ENV === 'prod') {
 }
 
 import admin from 'firebase-admin';
-const serviceAccount = await import(serviceAccountPath);
+const { serviceAccount } = await import(serviceAccountPath);
 import CONFIG from './config.js';
+
+console.log()
 
 class BaseData {
     constructor(){
